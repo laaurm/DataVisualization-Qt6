@@ -1,0 +1,25 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DICOM Segmentation Viewer</title>
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <header>
+    <h3>MRI Segmentation</h3>
+    <button id="segmentButton">Open DICOM and segment</button>
+    <span id="status">Ready</span>
+  </header>
+
+  <main id="viewer">
+    <img id="originalImage" alt="Original MRI">
+    <img id="segmentationOverlay" alt="Segmentation overlay">
+  </main>
+
+  <script src="qrc:///qtwebchannel/qwebchannel.js"></script>
+  <script src="./viewer.js"></script>
+</body>
+</html>
